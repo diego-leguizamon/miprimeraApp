@@ -1,1 +1,16 @@
-<p>persona works!</p>
+<p>
+    Nombre: {{ nombre }} 
+    Apellido: {{ apellido }} 
+    Edad: {{ edad }}
+    Telefono: {{ getTelefono() }}
+</p>
+
+<!-- interpolacion asociada a elementos html, se pueden acceder a los datos
+asociados a los elementos, en este ejemplo vemos como interpolamos los datos que
+se ingresan en el input 
+<div (keyup)='0'>
+    <label>Repetidor:</label>
+    <input #entrada />
+    {{ entrada.value }}
+</div>
+-->

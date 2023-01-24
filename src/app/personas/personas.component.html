@@ -2,8 +2,31 @@
   <div class="row">
     <div class="col">
       <h1>Listado de Personas 2023</h1>
+      <!-- property binding 
+           podemos manejar los atributos de los elementos html 
+           en este ejemmplo a un boton lo habilitamos o no dependiendo 
+           del valor que tenga la variable asociada 'deshabilitar' 
+           creada en personas.component.ts
+           si esta en true el boton queda deshabilitado
+           si esta en false el boton queda habilitado
+          -->
+      <button class="btn btn-primary" [disabled]='deshabilitar'
+      (click)='agregarPersona()'>Agregar Persona</button>
+      <p> {{ mensaje }}</p>
       <app-persona></app-persona>
-      <app-persona></app-persona>
+
+      <label>Titulo Persona</label>
+      <input type="text" class="form-control" (input)='modificarTitulo($event)'>
+      {{ titulo }}
+      <br>
+      <!--two way binding se refiere  
+       brinda a los componentes de su aplicación una forma de compartir datos. 
+       Utilice el enlace bidireccional para escuchar eventos y actualizar valores 
+       simultáneamente entre los componentes principales y secundarios.-->
+      <label>Two Way Bindind</label>
+      <input type="text" class="form-control"
+      [(ngModel)]='twoway'>
+      {{twoway}}
     </div>
   </div>
 </div>
