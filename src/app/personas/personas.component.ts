@@ -6,11 +6,12 @@ import { Component } from "@angular/core";
     /* inline template template: `<h1>Listado de Personas 2023</h1>
     <app-persona></app-persona>
     <app-persona></app-persona>`*/
-    // styleUrls: ['./personas.component.css'] 
+    styleUrls: ['./personas.component.css'] 
     // inline styles 
-    styles: [`
+    /*styles: [`
         h1{color: blue;}
     `]
+    */
 })
 export class PersonasComponent{
 
